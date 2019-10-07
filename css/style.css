@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
 
 * {
+  box-sizing: border-box;
   --purple: #68228b;
+  --grey: rgba(156, 73, 73, 0.345);
+  --pink: #c4275e;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -35,7 +38,7 @@ nav {
 
 .separator {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .subheader {

@@ -1,3 +1,64 @@
-.index-grid article img {
-  width: 330px;
+.index-grid {
+  display: grid;
+  grid-template-columns: (minmax(300px, 1fr));
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.wrapper h1 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.index-article {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+}
+
+.index-article img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-article h2 {
+  font-size: 20px;
+}
+.index-article h3 {
+  font-size: 20px;
+}
+
+.index-article p {
+  font-size: 18px;
+  font-weight: 100;
+  grid-area: 2/1;
+}
+
+.index-article p.postage-info {
+  font-size: 12px;
+  font-weight: 100;
+  grid-area: 2/2;
+}
+
+.index-article p.savings {
+  font-size: 18px;
+  line-height: 21px;
+  grid-area: 3/1;
+  align-self: end;
+}
+
+.index-grid a {
+  margin-left: -50px;
+  margin-top: 20px;
 }
