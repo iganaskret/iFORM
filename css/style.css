@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap");
+
 * {
   --purple: #68228b;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*      HEADER AREA      */
@@ -42,16 +43,37 @@ nav {
   line-height: 14px;
   color: var(--purple);
   text-align: center;
+  margin-top: 15px;
+  font-weight: 100;
 }
 
 .subheader p {
   display: inline-block;
 }
 
+.subheader p:nth-of-type(1) {
+  margin-right: 15px;
+}
+
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   border: 1px var(--purple) solid;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 5px;
+}
+
+/*      BUTTON STYLING       */
+
+.main-btn {
+  background-color: var(--purple);
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  width: 150px;
+  padding: 10px 0;
 }
