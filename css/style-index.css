@@ -37,6 +37,7 @@
 }
 .index-article h3 {
   font-size: 20px;
+  color: var(--pink);
 }
 
 .index-article p {
@@ -49,6 +50,7 @@
   font-size: 12px;
   font-weight: 100;
   grid-area: 2/2;
+  color: var(--grey);
 }
 
 .index-article p.savings {
@@ -56,6 +58,7 @@
   line-height: 21px;
   grid-area: 3/1;
   align-self: end;
+  color: var(--pink);
 }
 
 .index-grid a {
