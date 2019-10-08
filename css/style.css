@@ -11,6 +11,7 @@
 }
 
 /*      HEADER AREA      */
+
 .burger-menu span {
   display: block;
   height: 5px;
@@ -33,7 +34,7 @@ nav {
   display: grid;
   grid-template-columns: 40px 1fr;
   grid-gap: 5px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .separator {
