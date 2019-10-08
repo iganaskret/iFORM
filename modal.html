@@ -10,7 +10,25 @@
   </head>
 
   <body>
-    <h2>Choose more numbers and save more</h2>
+    <header>
+      <nav>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <img src="img/logo.png" alt="iFORM logo" />
+        </div>
+      </nav>
+      <div class="separator"></div>
+      <div class="subheader">
+        <span class="dot"></span>
+        <p>14 days cancellation right</p>
+        <span class="dot"></span>
+        <p>No bonding</p>
+      </div>
+    </header>
 
     <!-- Trigger/Open The Modal -->
     <button id="myBtn">Open Modal</button>
@@ -20,7 +38,41 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+
+        <p class="more">Choose more numbers and save more</p>
+        <fieldset>
+          <legend class="pink">your choice</legend>
+
+          <div class="modalchoice">
+            4 NUMBERS + COAT for <span class="purple">149dkk</span> <br /><span
+              class="pink"
+              >save 761kr</span
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="purple">our recommendation</legend>
+
+          <div class="modalchoice">
+            6 NUMBERS + COAT for <span class="purple">199dkk</span> <br /><span
+              class="pink"
+              >save 866kr</span
+            >
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+          <div class="modalchoice">
+            8 NUMBERS + COAT for <span class="purple">299dkk</span> <br /><span
+              class="pink"
+              >save 921kr</span
+            >
+          </div>
+        </fieldset>
+        <p class="disclaimer">+49.99DKK in postage and exp.</p>
+        <p class="disclaimer purple">See your savings</p>
+        <button>go to basket</button>
       </div>
     </div>
 
@@ -32,6 +84,8 @@
       let btn = document.querySelector("#myBtn");
       // Get the <span> element that closes the modal
       let span = document.getElementsByClassName("close")[0];
+      // get option element to hightlight it
+      let modalchoice = document.querySelector(".modalchoice");
 
       // When the user clicks the button, open the modal
       btn.onclick = function() {
@@ -41,6 +95,12 @@
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
         modal.style.display = "none";
+      };
+      // When the user clicks on choice add class "chosen"
+      //modalchoic.addEventListener(click)
+      modalchoice.onclick = function() {
+        modalchoice.classList.toggle("chosen");
+        console.log("clicked");
       };
 
       // When the user clicks anywhere outside of the modal, close it

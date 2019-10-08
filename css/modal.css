@@ -4,39 +4,81 @@ body {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 30%; /* Location of the box */
+  /* Location of the box*/
+  padding-top: 1.5em;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: var(--grey); /* Fallback color/grey overlay */
+  background-color: var(--grey); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
+  background-color: white;
+  border: 0.1em var(--grey);
+  margin: 1em;
+
+  align-content: center;
+  height: 100%;
+  text-align: center;
+}
+/* styling of inividual choices */
+.modal-content .modalchoice {
+  border-block: 0.2em var(--purple) solid;
+  border-left: 0.2em var(--purple) solid;
+  border-right: 0.2em var(--purple) solid;
+  padding: 1em;
+  margin: 1em;
+}
+fieldset {
   background-color: #fefefe;
+  border: 0.1em solid #888;
+  margin: 0.5em;
+}
+legend {
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: var(--grey);
   float: right;
-  font-size: 28px;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
+}
+/*small texts */
+.disclaimer {
+  font-size: 0.5em;
+}
+/* colors */
+.purple {
+  color: var(--purple);
+}
+.pink {
+  color: var(--pink);
+}
+/* heading */
+.more {
+  font-size: 1em;
+  background-color: grey;
+  padding: 2em;
+}
+.chosen {
+  background-color: pink;
+  color: red;
 }
