@@ -139,3 +139,34 @@ fieldset {
   padding: 10px;
   text-align: center;
 }
+
+.box-1 {
+  display: inline-block;
+  /* animation: fadeInFromNone 1s ease-out; */
+}
+/* .box-2 {
+  display: none;
+}
+.box-3 {
+  display: none;
+} */
+
+.hide {
+  display: none;
+}
+
+.fadeOut {
+  animation: fadeout 0.7s forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+}
