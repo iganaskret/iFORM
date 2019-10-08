@@ -28,15 +28,105 @@
       </div>
     </header>
     <main>
-        <div class="checkout-panel">
-            <div class="panel-body">
-              <h2 class="title">Checkout</h2>
-              <div class="progress-bar">
-                <div class="step active"></div>
-                <div class="step active"></div>
-                <div class="step"></div>
-                <div class="step"></div>
-              </div>
+      <div class="checkout-panel">
+        <div class="panel-body">
+          <div class="progress-bar">
+            <div class="step active-basket">1. Basket</div>
+            <div class="step">2. Delivery</div>
+            <div class="step">3. Payment Method</div>
+          </div>
+          <h2 class="basket-title">Your Basket</h2>
+          <div class="basket-heading">
+            <img class="basket-img" src="img/jacket.jpg" />
+            <p class="basket-text">Buy subscribtion with 8 disscounted numbers and active coat</p>
+          </div>
+          <ul class="basket-items">
+            <li class="basket-price">- price -</li>
+            <li class="separator">Your savings:</li>
+            <li class="basket-price">- price -</li>
+            <li class="separator">Introductory price:</li>
+            <li class="basket-price">- price -</li>
+            <li class="separator">Postage and Exp:</li>
+          </ul>
+          <h2 class="basket-title">Total price inc. delivery</h2>
+          <h2 class="basket-price-sum">305.5 kr</h2>
+          <button class="main-btn">Delivery</button>
+        </div>
+      </div>
+      <div class="checkout-panel">
+        <div class="panel-body">
+          <div class="progress-bar">
+            <div class="step">1. Basket</div>
+            <div class="step active-basket">2. Delivery</div>
+            <div class="step">3. Payment Method</div>
+          </div>
+          <h2 class="basket-title">Enter your personal information</h2>
+
+          <form id="basket-form" action="#0">
+            <input type="text" name="firstname" id="firstname" placeholder="first name" pattern="[a-zA-ZæøåÆØÅ\s\-]+" required="" />
+            <input type="text" name="lasttname" id="lasttname" placeholder="last name" pattern="[a-zA-ZæøåÆØÅ\s\-]+" required="" />
+            <input type="text" name="address" id="address" placeholder="address" pattern="[a-zA-ZæøåÆØÅ\s\-]+" required="" />
+            <div class="basket-divide">
+              <input type="text" name="zip" id="zipcode" placeholder="zip code" maxlength="4" pattern="[0-9]{4}" required="" />
+              <input type="text" name="town" id="town" placeholder="town" pattern="[a-zA-ZæøåÆØÅ\s\-]+" required="" />
+            </div>
+            <input type="text" name="email" id="email" placeholder="email" required="" />
+            <input type="text" name="tel" id="telephonenumber" placeholder="telephone number" pattern="[0-9]*" required="" />
+            <button class="main-btn" type="submit">Payment</button>
+          </form>
+        </div>
+      </div>
+      <div class="checkout-panel">
+        <div class="panel-body">
+          <div class="progress-bar">
+            <div class="step">1. Basket</div>
+            <div class="step">2. Delivery</div>
+            <div class="step active-basket">3. Payment Method</div>
+          </div>
+          <h2 class="basket-title">Choose Payment Method</h2>
+          <div class="radio-basket">
+            <div class="radio-basket-box">
+              <input type="radio" id="card" name="card-paymetn" value="card" />
+              <label for="huey">Visa / Dankort</label>
+              <img class="icon-basket" src="img/logo.png" />
+            </div>
+
+            <div class="radio-basket-box">
+              <input type="radio" id="credit" name="credit" value="credit-card" />
+              <label for="dewey">Credit Card</label>
+              <img class="icon-basket" src="img/icons/visa.png" />
+            </div>
+
+            <div class="radio-basket-box">
+              <input type="radio" id="mobile" name="mobile" value="mobile" />
+              <label for="louie">Mobile Pay</label>
+              <img class="icon-basket" src="img/icons/mobile.png" />
+            </div>
+          </div>
+          <form action="#0">
+            <input type="checkbox" name="terms" value="termsvalues" required />I have read and accepted the subscription terms Read more<br />
+            <input type="checkbox" name="vehicle2" value="Car" />Yes, I would like to receive exciting newsletters and offers on Media products, Housing & Lifestyle, Sports & Leisure, Travel, Fashion
+            & Beauty, Grocery, Events, Analyze and Games via letter, telephone and other electronic media eg e-mail and sms from the Bonnier Publications Group. You can unsubscribe from direct
+            marketing at any time. Read more<br />
+            <input type="submit" value="Submit" />
+          </form>
+          <ul class="conditions-basket">
+            <li>After the offer, you will continue with a current subscription and can cancel it at any time until the end of the current payment period.</li>
+            <li>FORM is published 18 times a year.</li>
+            <li>The subscription is payable for 4 numbers at a time, a total of DKK 310 .. (DKK 77.50 per number)</li>
+          </ul>
+          <fieldset>
+            <legend>Basket</legend>
+            <div class="basket-heading">
+              <img class="basket-img" src="img/jacket.jpg" />
+              <p class="basket-text">Buy subscribtion with 8 disscounted numbers and active coat</p>
+            </div>
+          </fieldset>
+          <h2 class="basket-title">Total price inc. delivery</h2>
+          <h2 class="basket-price-sum">305.5 kr</h2>
+          <button class="main-btn">Delivery</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
