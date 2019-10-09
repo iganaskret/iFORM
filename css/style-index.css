@@ -226,19 +226,36 @@ ol {
 }
 
 @media all and (min-width: 1100px) {
+  body {
+    padding: 30px;
+  }
   .index-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 3%;
+    grid-template-columns: repeat(4, 1fr);
   }
+
   .fake-articles {
     display: block;
   }
 
+  .fake-articles .inner-grid h3,
+  h2,
+  .gratis-item {
+    display: inline;
+  }
+
+  .fake-articles article:last-of-type,
+  .postage-info {
+    display: none;
+  }
+
   #index-selected {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     margin: 0;
+    width: 85%;
+  }
+
+  #index-selected img {
+    width: 50%;
   }
 }
