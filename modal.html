@@ -31,48 +31,60 @@
     </header>
 
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+    <button id="myBtn" class="main-btn">Open Modal</button>
 
     <!-- The Modal -->
     <div class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close"><img class="pinkclose" src="img/pinkcross.png"></span>
 
         <p class="more">Choose more numbers and save more</p>
-        <fieldset>
-          <legend class="pink">your choice</legend>
+        <div class="radioinputs">
+          <form action="#0">
+            <div class="form-control">
+              <label for="s">Small size</label>
+              
+              <p>
+                4 NUMBERS + COAT for <span class="purple">149dkk</span>
+                <p class="pink">save 761kr</span>
+                
+              </p>
+              
+              <input type="radio" name="size" id="s" />
+              <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+            </div>
+            <fieldset>
+              <legend class="purple">our recommendation</legend>
+              <div class="form-control">
+                <label for="m" aria-label="Most popular">Medium size</label>
+                <p>
+                  6 NUMBERS + COAT for <span class="purple">199dkk</span>
+                <p class="pink">save 866kr</p>
+                </p>
+                <input type="radio" name="size" id="m" />
+                <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+              </div>
+              <div class="modalchoice"></div>
+            </fieldset>
 
-          <div class="modalchoice">
-            4 NUMBERS + COAT for <span class="purple">149dkk</span> <br /><span
-              class="pink"
-              >save 761kr</span
-            >
-          </div>
-        </fieldset>
+            <div class="form-control">
+              <label for="l">Large size</label>
+              <p>
+                8 NUMBERS + COAT for <span class="purple">299dkk</span>
+               <p class="pink">save 921kr</p>
+              </p>
+              <input type="radio" name="size" id="l" />
+              <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+            
+             
+            </div>
+          </form>
+        </div>
 
-        <fieldset>
-          <legend class="purple">our recommendation</legend>
-
-          <div class="modalchoice">
-            6 NUMBERS + COAT for <span class="purple">199dkk</span> <br /><span
-              class="pink"
-              >save 866kr</span
-            >
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend></legend>
-          <div class="modalchoice">
-            8 NUMBERS + COAT for <span class="purple">299dkk</span> <br /><span
-              class="pink"
-              >save 921kr</span
-            >
-          </div>
-        </fieldset>
         <p class="disclaimer">+49.99DKK in postage and exp.</p>
         <p class="disclaimer purple">See your savings</p>
-        <button>go to basket</button>
+        <a href="basket.html" class="main-btn gotobasket">go to basket</a>
       </div>
     </div>
 
@@ -84,9 +96,6 @@
       let btn = document.querySelector("#myBtn");
       // Get the <span> element that closes the modal
       let span = document.getElementsByClassName("close")[0];
-      // get option element to hightlight it
-      let modalchoice = document.querySelector(".modalchoice");
-
       // When the user clicks the button, open the modal
       btn.onclick = function() {
         modal.style.display = "block";
@@ -95,12 +104,6 @@
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
         modal.style.display = "none";
-      };
-      // When the user clicks on choice add class "chosen"
-      //modalchoic.addEventListener(click)
-      modalchoice.onclick = function() {
-        modalchoice.classList.toggle("chosen");
-        console.log("clicked");
       };
 
       // When the user clicks anywhere outside of the modal, close it
