@@ -406,9 +406,6 @@ p {
   justify-self: end;
 }
 .form-control {
-  border-block: 0.2em var(--grey) solid;
-  border-left: 0.2em var(--grey) solid;
-  border-right: 0.2em var(--grey) solid;
   padding: 1em;
   margin: 1em;
 
