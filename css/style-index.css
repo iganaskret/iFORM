@@ -351,3 +351,8 @@ ol {
     margin-left: 0;
   }
 }
+
+.wrapper-final {
+  text-align: center;
+  margin-top: 100px;
+}

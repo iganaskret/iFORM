@@ -88,6 +88,10 @@ nav {
   width: 100%;
 }
 
+.checkout-panel a {
+  width: 100%;
+}
+
 .step {
   display: inline-block;
   margin: 10px;
