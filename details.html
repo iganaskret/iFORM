@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-index.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/style-index.css" />
+    
     <title>iFORM</title>
   </head>
   <body>
@@ -27,12 +29,71 @@
         <span class="dot"></span>
         <p>No bonding</p>
       </div>
+      
     </header>
     <main>
       <div class="wrapper">
         <h1>4 numbers of I FORM and an active coat</h1>
         <img src="img/jacket.jpg" alt="jacket and magazines offer" />
-        <button class="main-btn">Order now for 149kr</button>
+      <!-- Trigger/Open The Modal -->
+    Choose Amount of Numbers in the Promotional Bundle of Subscribtion
+    <button id="myBtnModal" class="main-btn">Order for 149dkk</button>
+
+    <!-- The Modal -->
+    <div class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"><img class="pinkclose" src="img/pinkcross.png"></span>
+
+        <p class="more">Choose more numbers and save more<p>You will get a <span class="purple">Premium Coat Termal</span> in each subscribtion bundle</p>
+        </p>
+        <div class="radioinputs">
+          <form action="#0">
+            <div class="form-control">
+              <label for="s"></label>
+              
+              <p>
+                4 NUMBERS <p class="purple">149dkk</p>
+                <p class="pink">save 761kr</p>
+                
+              </p>
+              
+              <input type="radio" name="size" id="s" />
+              <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+            </div>
+            <fieldset>
+              <legend class="purple">our recommendation</legend>
+              <div class="form-control">
+                <label for="m" aria-label="Most popular"></label>
+                <p>
+                  6 NUMBERS<p class="purple">199dkk</p>
+                <p class="pink">save 866kr</p>
+                </p>
+                <input type="radio" name="size" id="m" />
+                <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+              </div>
+              <div class="modalchoice"></div>
+            </fieldset>
+
+            <div class="form-control">
+              <label for="l"></label>
+              <p>
+                8 NUMBERS<p class="purple">299dkk</p>
+               <p class="pink">save 921kr</p>
+              </p>
+              <input type="radio" name="size" id="l" />
+              <div class="circle">  <img class="greendash" src="img/greendash.png"> </div>
+            
+             
+            </div>
+          </form>
+        </div>
+
+        <p class="disclaimer">+49.99DKK in postage and exp.</p>
+        <p class="disclaimer purple">See your savings</p>
+        <a href="basket.html" class="main-btn gotobasket">go to basket</a>
+      </div>
+    </div>
         <p class="postage-info right">
           + postage 49.59 kr, a total of 198.50kr
         </p>
@@ -95,5 +156,30 @@
         </div>
       </div>
     </main>
+    <script>
+      // Get the modal
+      let modal = document.querySelector(".modal");
+
+      // Get the button that opens the modal
+      let btn = document.querySelector("#myBtnModal");
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close")[0];
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

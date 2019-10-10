@@ -17,7 +17,7 @@ body {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: var(--grey); /* Fallback color/grey overlay */
-  background-color: var(--grey); /* Black w/ opacity */
+  background-color: white; /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -26,7 +26,7 @@ body {
   border: 0.1em var(--grey);
   margin: 1em;
 
-  height: 100%;
+  height: 50%;
   text-align: center;
   align-content: center;
 }
@@ -38,12 +38,6 @@ body {
   padding: 1em;
   margin: 1em;
 }
-form {
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .form-control {
   border-block: 0.2em var(--purple) solid;
   border-left: 0.2em var(--purple) solid;
@@ -51,6 +45,10 @@ form {
   padding: 1em;
   margin: 1em;
 }
+form {
+  margin: auto;
+}
+
 fieldset {
   background-color: #fefefe;
   border: 0.1em solid #888;
@@ -64,8 +62,9 @@ legend {
 .close {
   color: var(--grey);
   float: right;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
+  margin-right: 1em;
 }
 
 .close:hover,
@@ -107,9 +106,6 @@ legend {
   border-radius: inherit;
 }
 
-.radioinputs {
-  display: grid;
-}
 .form-control:checked {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.0001),
     0 4px 6px -2px rgba(0, 0, 0, 0.00001);
@@ -118,7 +114,7 @@ legend {
 }
 .form-control:hover,
 .form-control:focus-within {
-  border-color: var(--green);
+  border-color: var(--grey);
   box-shadow: 5px 5px 10px 1px var(--grey);
 }
 label:after {
