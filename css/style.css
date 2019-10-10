@@ -3,7 +3,11 @@
 * {
   box-sizing: border-box;
   --purple: #68228b;
+<<<<<<< HEAD
   --grey: #d7d6d4;
+=======
+  --grey: #888b8d;
+>>>>>>> origin/iga
   --pink: #c4275e;
   margin: 0;
   padding: 0;
