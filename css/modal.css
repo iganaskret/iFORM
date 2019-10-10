@@ -40,17 +40,11 @@ body {
 }
 /* styling of inividual choices */
 .modal-content .form-control {
-  border-block: 0.2em var(--purple) solid;
-  border-left: 0.2em var(--purple) solid;
-  border-right: 0.2em var(--purple) solid;
   padding: 1em;
   margin: 1em;
 }
 
 .form-control {
-  border-block: 0.2em var(--purple) solid;
-  border-left: 0.2em var(--purple) solid;
-  border-right: 0.2em var(--purple) solid;
   padding: 1em;
   margin: 1em;
 }

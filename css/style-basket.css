@@ -95,7 +95,7 @@ nav {
 }
 .progress-bar {
   text-align: center;
-  background-color: var(--grey);
+  background-color: #d7d6d4;
 }
 .active-basket {
   color: var(--pink);
@@ -177,6 +177,8 @@ textarea {
 }
 input[type="checkbox"] {
   margin: 10px;
+
+  width: 1.5em;
 }
 input[type="radio"] {
   margin: 10px;
@@ -296,7 +298,7 @@ ul.conditions-basket li {
   margin: 0 auto;
   width: 0;
   height: 0;
-  border-top: solid 20px var(--grey);
+  border-top: solid 20px #d7d6d4;
   border-left: solid 20px transparent;
   border-right: solid 20px transparent;
 }
