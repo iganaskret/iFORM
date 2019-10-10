@@ -86,7 +86,7 @@ p.postage-info {
 .wrapper p.bold {
   margin-top: 10px;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 1em;
 }
 
 .wrapper p,
@@ -151,6 +151,13 @@ ol {
 
 .jacket-details button:hover {
   text-decoration: underline;
+}
+
+.wrapper p.save-details {
+  color: var(--pink);
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 700;
 }
 
 @media all and (min-width: 700px) {
@@ -238,12 +245,6 @@ ol {
     display: block;
   }
 
-  .fake-articles .inner-grid h3,
-  h2,
-  .gratis-item {
-    display: inline;
-  }
-
   .fake-articles article:last-of-type,
   .postage-info {
     display: none;
@@ -257,5 +258,71 @@ ol {
 
   #index-selected img {
     width: 50%;
+  }
+
+  .details-grid {
+    background-color: #e9e8e8;
+    margin-top: 2%;
+    padding: 40px;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .details-grid img {
+    width: 80%;
+  }
+
+  .offer-details {
+    position: relative;
+  }
+
+  .offer-details button {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .wrapper #offer-name {
+    display: none;
+  }
+
+  .bold::before {
+    content: "4 numbers of I FORM and an active coat \2B50 \2B50 \2B50 \2B50 \2B50";
+    display: block;
+    font-size: 1.5em;
+    transform: translateY(-20%);
+  }
+
+  li {
+    font-size: 1.2em;
+  }
+
+  .wrapper p.save-details {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  .tick {
+    display: inline-block;
+    padding: 0;
+    height: 20px;
+    vertical-align: top;
+    width: 30px;
+  }
+
+  .tick img {
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .jacket-details li {
+    line-height: 30px;
+    font-size: 1em;
+  }
+
+  .jacket-details p {
+    font-size: 1.1em;
+    margin-left: 0;
   }
 }
