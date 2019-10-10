@@ -110,6 +110,11 @@ ol {
   border-right: 3px solid var(--pink);
   margin-right: 5px;
 }
+.check2 {
+  display: inline-block;
+  transform: translateY(0.5em);
+  width: 2em;
+}
 
 .tick {
   display: inline-block;
